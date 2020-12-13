@@ -6,8 +6,8 @@
 
 html {
   box-sizing: border-box;
-  font-family: 'Domine', serif;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Domine", serif;
+  font-family: "Quicksand", sans-serif;
   line-height: 1.5;
 }
 
@@ -23,13 +23,13 @@ header {
 .logo {
   display: inline-block;
   margin-left: 1rem;
-  margin-top:1rem;
+  margin-top: 1rem;
   padding: 0;
 }
 
 .img-flex {
   width: 4%;
-  display: inline;
+  display: block;
 }
 
 h1 {
@@ -76,8 +76,8 @@ a {
   text-decoration: none;
   color: #f2f2f2;
   border-radius: 3px;
-  border-color: #990000;
-  background-color: #990000;
+  border-color: #900;
+  background-color: #900;
   border-style: solid;
   padding: .5em;
   display: block;
@@ -85,8 +85,8 @@ a {
 }
 
 a:hover {
-  background-color: #ff0000;
-  border-color: #ff0000;
+  background-color: #f00;
+  border-color: #f00;
 }
 
 body {
