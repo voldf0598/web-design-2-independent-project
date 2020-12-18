@@ -6,8 +6,8 @@
 
 html {
   box-sizing: border-box;
-  font-family: "Domine", serif;
-  font-family: "Quicksand", sans-serif;
+  font-family: Domine, serif;
+  font-family: Quicksand, sans-serif;
   line-height: 1.5;
 }
 
@@ -31,7 +31,6 @@ header {
 
 .logo {
   width: 50%;
-  display: inline;
   margin-left: .7em;
 }
 
@@ -68,7 +67,7 @@ ul li {
   text-align: center;
 }
 
-.color{
+.color {
   text-decoration: none;
   color: #f2f2f2;
 }
@@ -81,7 +80,6 @@ ul li {
   padding: .5em;
   display: block;
   margin: .5em;
-
 }
 
 .above:hover {
@@ -116,7 +114,7 @@ body {
 img {
   display: block;
   width: 100%;
-  border-radius:  5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
 }
 
 div {
@@ -173,7 +171,6 @@ input:focus {
   background-color: #ffdedb;
 }
 
-
 form {
   text-align: center;
 }
@@ -197,7 +194,7 @@ section {
 
 .cards {
   border-radius: 5px;
-  box-shadow: 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border: 1px solid #f00;
   display: grid;
   grid-template-columns: auto;
   grid-gap: 1rem;
@@ -245,6 +242,7 @@ footer {
     padding: .4em;
     margin: .1em;
   }
+
   .logo {
     width: 50%;
     margin-left: 0;
