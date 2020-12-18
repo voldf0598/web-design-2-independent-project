@@ -36,8 +36,14 @@ header {
 }
 
 .logo {
-  width: 50%;
-  margin-left: .7em;
+  width: 100%;
+  padding: .5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 0;
+  text-align: center;
 }
 
 h1 {
@@ -106,6 +112,21 @@ body {
   margin: 0;
 }
 
+.top {
+  position: absolute;
+  top: 95%;
+  margin: 2rem;
+  background-color: #ffdedb;
+  opacity: .8;
+  border-radius: 5px;
+  padding: .5rem;
+}
+
+.bottom {
+  position: relative;
+  padding: 1rem;
+}
+
 .first-page {
   display: block;
   background-color: #ffdedb;
@@ -128,12 +149,12 @@ div {
   vertical-align: middle;
 }
 
-h2 {
+h3 {
   margin: 0 0 1.5rem;
   text-align: left;
 }
 
-h3 {
+h4 {
   font-weight: bold;
 }
 
@@ -272,6 +293,16 @@ footer {
   td {
     padding-left: 2em;
     padding-right: 2em;
+  }
+
+  .top {
+    position: static;
+    text-align: center;
+  }
+
+  .bottom {
+    padding: 5rem;
+    padding-bottom: 1rem;
   }
 
 }
