@@ -15,29 +15,31 @@ html {
   box-sizing: inherit;
 }
 
+.skip-links {
+  background: #fff;
+  color: #fff;
+  top: 0%;
+  padding: 8px;
+  position: absolute;
+  transform: translateY(-100%);
+  transition: transform .3s;
+}
+
 header {
   margin: 0;
-  padding-bottom: .5em;
 }
 
 .logo {
-  display: inline-block;
-  margin-left: 1rem;
-  margin-top: 1rem;
-  padding: 0;
-}
-
-.img-flex {
-  width: 4%;
-  display: block;
+  width: 50%;
+  display: inline;
+  margin-left: .7em;
 }
 
 h1 {
   text-align: center;
-  line-height: 1.5;
-  display: inline-block;
   margin: 0;
   font-size: 4rem;
+  display: inline-block;
 }
 
 nav {
@@ -45,12 +47,6 @@ nav {
   display: block;
   margin: 0;
   font-size: 1rem;
-}
-
-.bottom {
-  display: block;
-  text-align: center;
-  margin: 0;
 }
 
 nav ul {
@@ -69,38 +65,58 @@ ul li {
   list-style-type: none;
   text-decoration: none;
   display: inline;
-  text-align: right;
+  text-align: center;
 }
 
-a {
+.color{
   text-decoration: none;
   color: #f2f2f2;
+}
+
+.above {
   border-radius: 3px;
   border-color: #900;
   background-color: #900;
   border-style: solid;
   padding: .5em;
   display: block;
+  margin: .5em;
 
 }
 
-a:hover {
+.above:hover {
   background-color: #f00;
   border-color: #f00;
+}
+
+.below {
+  color: #900;
+  text-align: justify;
+  padding: .5em;
+  display: none;
+  margin: .5em;
+}
+
+.below:hover {
+  color: #f00;
 }
 
 body {
   margin: 0;
 }
 
-main {
+.first-page {
   display: block;
-  margin: 2em;
+  background-color: #ffdedb;
+  border-top: 3px;
+  border-color: #f00;
+  border-style: solid;
 }
 
 img {
   display: block;
   width: 100%;
+  border-radius:  5px 5px 0 0;
 }
 
 div {
@@ -116,8 +132,114 @@ h2 {
   text-align: left;
 }
 
+h3 {
+  font-style: bold;
+}
+
+th, td {
+  border-bottom: 1px solid #900;
+  padding: 1em;
+  text-align: center;
+}
+
+th {
+  background-color: #ffdedb;
+  color: #000;
+}
+
+td {
+  text-align: center;
+}
+
+table {
+  border-collapse: collaspe;
+}
+
+.table {
+  padding: .3rem;
+  padding-bottom: 1rem;
+}
+
 p {
   text-align: left;
+  margin: 0;
+}
+
+input {
+  width: 100%
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #900;
+}
+
+input:focus {
+  background-color: #ffdedb;
+}
+
+
+form {
+  text-align: center;
+}
+
+legend {
+  text-align: center;
+}
+
+.caption {
+  font-size: .7rem;
+  font-style: italic;
+}
+
+.yikes {
+  padding: .5rem;
+}
+
+h2 {
+  margin-left: 1rem;
+}
+
+section {
+  text-align: center;
+}
+
+.cards {
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 1rem;
+  margin: 1rem;
+}
+
+.price {
+  color: #fff;
+  font-size: 22px
+}
+
+button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: #f00;
+  background-color: #ffdedb;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+  font-size:18px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+footer {
+  background-color: #900;
+  padding: 1em;
+  text-align: center;
+  color: #fff;
 }
 
 @media only screen and (min-width: 25em) {
@@ -133,6 +255,10 @@ p {
     padding: .4em;
     margin: .1em;
   }
+  .logo {
+    width: 50%;
+    margin-left: 0;
+  }
 }
 
 @media only screen and (min-width: 38em) {
@@ -141,6 +267,12 @@ p {
     font-size: 110%;
     line-height: 1.4;
   }
+
+  td {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
 }
 
 @media only screen and (min-width: 60em) {
@@ -149,6 +281,8 @@ p {
     font-size: 120%;
     line-height: 1.5;
   }
+
+
 }
 
 @media only screen and (min-width: 90em) {
@@ -156,4 +290,10 @@ p {
   html {
     font-size: 130%;
   }
+
+  form {
+    padding-left: 24em;
+    padding-right: 24em;
+  }
+
 }
